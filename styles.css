@@ -100,6 +100,7 @@ body {
   font-family: 'Pacifico', cursive;
   font-size: 1.2rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: justify;
 }
 
 /* ===== FOOTER ===== */
@@ -170,6 +171,7 @@ footer {
     font-size: 1rem;
     padding: 20px;
     margin: 0 10px;
+    text-align: justify;
   }
 
   /* MUSIC BUTTON */
