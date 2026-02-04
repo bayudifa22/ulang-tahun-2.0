@@ -5,9 +5,19 @@ const btn = document.getElementById("musicBtn");
 music.volume = 0.3;
 
 // autoplay attempt
-document.addEventListener("click", () => {
-  music.play();
-}, { once: true });
+window.addEventListener("load", () => {
+  const playPromise = music.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        btn.style.display = "none";
+      })
+      .catch(() => {
+        btn.style.display = "block";
+      });
+  }
+});
 
 // tombol play/pause
 btn.addEventListener("click", () => {
