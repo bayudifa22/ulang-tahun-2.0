@@ -8,12 +8,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <style>
-    .card p {
-      font-size: 1rem;
-      color: #333;
-      padding: 20px;
-      text-align: center;
-    }
+    /* ===== MOBILE RESPONSIVE ===== */
+    @media (max-width: 768px) {
+
+  .gallery {
+    padding: 40px 15px;
+  }
+
+  .gallery h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* satu kolom */
+    gap: 18px;
+  }
+
+  .card {
+    min-width: 85%;
+    scroll-snap-align: center;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .next-btn {
+    width: 90%;
+    max-width: 320px;
+    padding: 14px 0;
+    font-size: 1rem;
+  }
+}
+
 </style>
 <body>
 
@@ -23,8 +53,6 @@
 </audio>
 
 <button id="musicBtn">▶ Play Music</button>
-
-<script src="script.js"></script>
 
 <section class="gallery">
   <h3>Ada sedikit lagi ni yang mau aku sampein ke kamu 🤍</h3>
@@ -55,5 +83,13 @@
     <a href="dashboard.html" class="next-btn">← Back</a>
   </div>
 </section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>By Bayu Difa Ramadhan © <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
